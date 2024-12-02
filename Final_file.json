@@ -1,0 +1,31 @@
+{
+    "Titre de la lettre": "Récépissé de dépôt de plainte",
+    "Pieds de page (Informations et Références Légales et Sanctions)": {
+        "Section": "L'article 441-6 et l'article 441-9 du Code pénal punissent d'un emprisonnement de deux ans et d'une amende de 30,000 euros celui qui se sera fait délivrer, ou aura tenté de se faire délivrer, un document destiné à constater un droit. L'article 441-7 du Code pénal punit d'un an d'emprisonnement et de 15,000 euros d'amende le fait de faire usage d'un faux document administratif."
+    },
+    "Conseils (Conservation de ce Document)": {
+        "Section": "Conservez précieusement cette lettre. Elle constitue la preuve de votre dépôt de plainte et vous sera utile dans vos démarches auprès de votre employeur ou de votre compagnie d'assurance."
+    },
+    "Contenu Principal de la lettre (Informations sur la Plainte et Droits des Victimes)": {
+        "Message": "Vous venez de déposer une plainte pour les faits cités ci-dessus. Cette plainte, après enquête de nos services ou du service territorialement compétent, sera transmise à M. le procureur de la République au tribunal de grande instance de BEAUVAIS 60000. Il décidera des suites à lui donner et vous en tiendra informé(e). Pour toute assistance, vous pouvez contacter l'association ENTRAIDE à l'adresse indiquée."
+    },
+    "Informations Générales sur le Dépôt de Plainte": {
+        "Date du dépôt de plainte": "21/03/2015",
+        "Identité du plaignant": "Jean-Luc Guiet",
+        "Références de la procédure": "14610/00865/2015",
+        "Unité de dépôt de plainte": "Gendarmerie Nationale",
+        "Groupement": "Gendarmerie de l'Oise",
+        "Affaire suivie par": {
+            "Grade": "Gendarme",
+            "Prénom": "Florian",
+            "Nom": "Laugenie"
+        }
+    },
+    "Objet de la Plainte": {
+        "NATINF": "28139",
+        "Description": "Usurpation de l'identité d'un tiers ou usage de données permettant de l'identifier en vue de troubler sa tranquillité ou celle d'autrui ou de porter atteinte à son honneur ou à sa considération.",
+        "Période": "25/12/2013 à 00:00 au 21/03/2015 à 10:59",
+        "Lieu": "Internet - Fresneaux-Montchevreuil 60240 (France)",
+        "Code INSEE": "60256"
+    }
+}
