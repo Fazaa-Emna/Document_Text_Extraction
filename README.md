@@ -5,11 +5,12 @@
 ## 🚀 **Project Overview**
 This project is dedicated to building an intelligent pipeline for parsing and extracting information from legal French documents. Legal documents often come with complex layouts and language, making accurate data extraction a challenging task. Our solution integrates state-of-the-art technologies to tackle this challenge, ensuring high accuracy in text extraction, structure, and summarization.
 
-The pipeline is divided into two main notebooks, each addressing a critical stage of the document parsing workflow.
+The pipeline is divided into three main notebooks, each addressing a critical stage of the document parsing workflow.
 
 ---
 
 ## 📂 **Project Structure**
+
 ### **1️⃣ Notebook 1: Image Preprocessing and Segmentation**
 - **Goal**: Enhance document images for accurate OCR and segmentation into logical sections.
 - **Tasks**:
@@ -48,6 +49,30 @@ The pipeline is divided into two main notebooks, each addressing a critical stag
   - 🧠 **SpaCy**: NER and POS tagging.
   - 🤖 **Falcon-7B-Instruct**: Summarization and structuring via state-of-the-art LLMs.
 
+---
+
+### **3️⃣ Notebook 3: Fine-Tuning YOLOv9 for Hand Signature Detection**
+- **Goal**: Train a custom YOLOv9 model to detect hand signatures in scanned complaint documents.
+- **Tasks**:
+  - **Dataset Preparation**:
+    - Collected and labeled a dataset of **1950 images** containing hand signatures using **Roboflow**.
+    - Applied **data augmentation** to simulate real-world scanned conditions:
+      - **Scaling**, **rotation**, **shearing**, **grayscale conversion**, **blur**, and **noise addition**.
+    - Final dataset size after augmentation: **4980 images**, split into:
+      - **Training Set**: 4545 images (91%)
+      - **Validation Set**: 184 images (4%)
+      - **Test Set**: 251 images (5%).
+  - **Model Fine-Tuning**:
+    - Fine-tuned the YOLOv9 model on this dataset to detect hand signatures.
+    - Optimized hyperparameters to achieve high precision and recall.
+  - **Evaluation**:
+    - The model was evaluated on metrics such as **mAP@0.5** (90%+) and **mAP@0.5:0.95** (80%).
+    - Demonstrated robustness in detecting signatures under various conditions, including complex document layouts.
+
+- **Technologies**:
+  - ⚙️ **YOLOv9**: Object detection model for hand signature identification.
+  - 🖼️ **Roboflow**: Dataset preparation and augmentation.
+  - 📊 **Matplotlib**: Visualization of training metrics and evaluation results.
 
 ---
 
@@ -60,6 +85,8 @@ The pipeline is divided into two main notebooks, each addressing a critical stag
    - Normalize and clean text to improve readability and accuracy.
 4. **Scalable Pipeline**:
    - Design a robust pipeline capable of handling various legal document formats.
+5. **Signature Detection**:
+   - Enable accurate detection of hand signatures within scanned complaint documents.
 
 ---
 
@@ -73,7 +100,10 @@ The pipeline is divided into two main notebooks, each addressing a critical stag
 | **Hunspell**           | French spelling correction.                      |
 | **Falcon-7B-Instruct** | Summarization and data structuring.              |
 | **SpaCy**              | NER and POS tagging.                             |
-| **PDFPlumber**         | PDF Manipulation and type conversion             |
+| **PDFPlumber**         | PDF Manipulation and type conversion.            |
+| **YOLOv9**             | Fine-tuned for hand signature detection.         |
+| **Roboflow**           | Dataset preparation and augmentation.            |
+| **Matplotlib**         | Visualization of training metrics.               |
 
 ---
 
@@ -83,4 +113,4 @@ Legal documents are critical and often densely formatted with complex language. 
 - **Reduce Errors**: Ensure accuracy in extracting sensitive legal information.
 - **Enable Scalability**: Process large volumes of documents quickly and efficiently.
 - **Unlock Insights**: Enable downstream applications such as legal analytics and decision-making systems.
-
+- **Improve Signature Detection**: Simplify validation of document authenticity by detecting hand signatures with high accuracy.
