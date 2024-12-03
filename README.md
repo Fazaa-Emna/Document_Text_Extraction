@@ -62,6 +62,7 @@ The pipeline is divided into three main notebooks, each addressing a critical st
       - **Training Set**: 4545 images (91%)
       - **Validation Set**: 184 images (4%)
       - **Test Set**: 251 images (5%).
+    - [View the collected dataset on Roboflow](https://app.roboflow.com/smart-conseil-lvw6i/signature_detector/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true).
   - **Model Fine-Tuning**:
     - Fine-tuned the YOLOv9 model on this dataset to detect hand signatures.
     - Optimized hyperparameters to achieve high precision and recall.
